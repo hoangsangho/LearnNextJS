@@ -1,10 +1,21 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button>Click me</Button>
-      <div className="text-9xl text-red-700 font-roboto">Hello</div>
+    <div className="w-[1000px] h-[800px] bg-amber-100">
+      <Image
+        // src={"/images/girl-anime.jpg"}
+        // alt="girl-anime"
+        src={"https://cdn.pixabay.com/photo/2023/05/23/02/12/girl-8011732_1280.jpg"}
+        alt="Girl AI CBi"
+        width={600}
+        height={400} 
+        quality={100}
+        style={{
+          width: 600,
+          height: 400,
+        }}
+      />
     </div>
   );
 }
